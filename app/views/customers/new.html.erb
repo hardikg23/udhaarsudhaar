@@ -1,0 +1,66 @@
+<div style="width: 100%;margin-top: 20px;" align="center">
+  <div class="outer-shadow bgwhite" style="width: 60%; padding-top: 20px;padding-bottom: 40px;font-family: monospace;">
+  <%= form_for @customer do |f| %>
+
+    <p class="bg-success pad10">Fill This Form</p>
+    <% if @error %>
+      <p class="bg-danger pad10"><%= @error %></p>
+    <% end %>
+
+    <table width="90%">
+      <tr>
+        <td class="bold font13">Name</td>
+        <td class="pad10" width="65%"><%= f.text_field :name, :placeholder => "Name", :required => true, :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Mobile</td>
+        <td class="pad10"><%= f.text_field :mobile, :placeholder => "Mobile", :required => true, :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Email</td>
+        <td class="pad10"><%= f.text_field :email, :placeholder => "Email", :required => true, :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Address</td>
+        <td class="pad10"><%= f.text_area :address, :placeholder => "Address", :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">City</td>
+        <td class="pad10"><%= f.text_field :city, :placeholder => "City", :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Do you have<br> a CIBIL report? </td>
+        <td>
+          <span>
+            <%= f.radio_button :cibil_report, true, :checked => true %> YES
+          </span> 
+          <span>
+            <%= f.radio_button :cibil_report, false %> NO
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="bold font13">CIBIL score</td>
+        <td class="pad10"><%= f.text_field :cibil_score, :placeholder => "CIBIL score", :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Pincode</td>
+        <td class="pad10"><%= f.text_field :pincode, :placeholder => "Pincode", :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Good time to call?</td>
+        <td class="pad10"><%= f.text_field :good_time_to_call, :placeholder => "", :class => "form-control" %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Remarks</td>
+        <td class="pad10"><%= f.text_area :remarks, :placeholder => "Remarks", :class => "form-control" %></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td class="pad10"><%= f.submit "SUBMIT", :class => "btn btn-primary" %></td>
+      </tr>
+    </table>
+  <% end %>
+  </div>
+</div>

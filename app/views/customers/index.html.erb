@@ -1,0 +1,41 @@
+<div style="width: 100%;margin-top: 20px;" align="center">
+  <div class="outer-shadow bgwhite" style="width: 90%; padding-top: 20px;padding-bottom: 40px;font-family: monospace;">
+    <p class="bg-success pad10">All Response</p>
+    <table width="100%" class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>mobile</th>
+          <th>email</th>
+          <th>address</th>
+          <th>city</th>
+          <th>pincode</th>
+          <th>report</th>
+          <th>cibil score</th>
+          <th>remarks</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="table-striped">
+        <% @customers.each do |c| %>
+          <tr>
+            <td><%= c.id %></td>
+            <td><%= c.name %></td>
+            <td><%= c.mobile %></td>
+            <td><%= c.email %></td>
+            <td><%= c.address %></td>
+            <td><%= c.city %></td>
+            <td><%= c.pincode %></td>
+            <td><%= c.cibil_report %></td>
+            <td><%= c.cibil_score %></td>
+            <td><%= c.remarks %></td>
+            <td><%= c.created_at %></td>
+            <td><%= link_to 'view', c %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div style="width: 100%;margin-top: 20px;" align="center">
+  <div class="outer-shadow bgwhite" style="width: 60%; padding-top: 20px;padding-bottom: 40px;font-family: monospace;">
+    <p class="bg-success pad10">Thank You!!</p>
+
+    <table width="90%">
+      <tr>
+        <td class="bold font13">Name</td>
+        <td class="pad10" width="50%"><%= @customer.name %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Mobile</td>
+        <td class="pad10"><%= @customer.mobile %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Email</td>
+        <td class="pad10"><%= @customer.email %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Address</td>
+        <td class="pad10"><%= @customer.address %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">City</td>
+        <td class="pad10"><%= @customer.city %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Do you have a CIBIL report? </td>
+        <td class="pad10"><%= @customer.cibil_report %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">CIBIL score</td>
+        <td class="pad10"><%= @customer.cibil_score %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Pincode</td>
+        <td class="pad10"><%= @customer.pincode %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Good time to call?</td>
+        <td class="pad10"><%= @customer.good_time_to_call %></td>
+      </tr>
+      <tr>
+        <td class="bold font13">Remarks</td>
+        <td class="pad10"><%= @customer.remarks %></td>
+      </tr>
+    </table>
+    <br><br>
+    <p class="bg-primary pad10">Your Response has been stored</p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+body{
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+
+
+.pad10{padding: 10px;}
+.bold{font-weight: bold;}
+.font7{font-size: 0.7em}
+.font8{font-size: 0.8em}
+.font85{font-size: 0.85em}
+.font9{font-size: 0.9em}
+.font10{font-size: 1em}
+.font11{font-size: 1.1em}
+.font12{font-size: 1.2em}
+.font13{font-size: 1.3em}
+.font14{font-size: 1.4em}
+.font15{font-size: 1.5em}
+.font16{font-size: 1.6em}
+.font18{font-size: 1.8em}
+.font20{font-size: 2em}
+.font25{font-size: 2.5em}
+.font30{font-size: 3em}
+.font35{font-size: 3.5em}
+.font40{font-size: 4em}
+.bgwhite{
+  background-color: #ffffff;
+}
+
+.outer-shadow{
+-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+-moz-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
