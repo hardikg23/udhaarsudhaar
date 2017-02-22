@@ -3,6 +3,10 @@ class CustomersController < ApplicationController
 
   def index
     @customers = Customer.all
+    respond_to do |format|
+      format.html
+      format.csv {send_data  Customer.order('id desc').to_csv, :type => 'text/csv' , :disposition => "attachment; filename=data.csv"}
+    end
   end
 
   def show
